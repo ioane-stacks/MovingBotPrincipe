@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Absorption Expression Composition!</title>
+
+  <link rel="stylesheet" href="fontcss/alk-sanet.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="js.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="controlBox">
+    <span class="openClose">«</span>
+
+    <div class="fullGroup">
+      <div class="controlHeader">
+        <b class="text-dark">Control Panel</b>
+      </div>
+
+      <div class="inputGroup">
+
+        <div class="form-group input-group">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text">Width</span>
+          </div>
+          <input type="text" id="Xwidth" class="form-control" value="100" />
+
+          <div class="input-group-prepend">
+            <span class="input-group-text">Height</span>
+          </div>
+          <input type="text" id="Xheight" class="form-control" value="100" />
+
+        </div>
+
+        <div class="form-group input-group">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text">Objects Length</span>
+          </div>
+          <input type="text" id="objLength" class="form-control" value="50" />
+
+        </div>
+
+        <div class="form-group input-group">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text">Transparency</span>
+          </div>
+          <input type="text" id="objTransparency" class="form-control" value="0.5" />
+
+        </div>
+
+        <div class="form-group input-group">
+
+          <div class="input-group-prepend">
+            <span class="input-group-text">Rounded %</span>
+          </div>
+          <input type="text" id="objRounded" class="form-control" value="50" />
+
+        </div>
+
+        <div class="btn-group btn-group-toggle objRotation" data-toggle="buttons">
+          <p>Rotation</p>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="1" checked/>
+            On
+          </label>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="2" />
+            Off
+          </label>
+        </div>  
+
+        <div class="btn-group btn-group-toggle objGradient" data-toggle="buttons">
+          <p>Gradient</p>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="1" checked/>
+            Radial
+          </label>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="2" />
+            Linear
+          </label>
+        </div>
+
+        <div class="btn-group btn-group-toggle objShadowed" data-toggle="buttons">
+          <p>Shadow</p>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="1" />
+            On
+          </label>
+          <label class="btn btn-light border">
+            <input type="radio" name="options" value="2" checked/>
+            Of
+          </label>
+        </div>
+
+
+        <div class="form-group" style="position: absolute; bottom: 0px; right: 15px;">
+          <button id="clearDesk" class="btn btn-light border text-secondary">Clear Desk</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+*{
+  overflow: hidden;
+  /* user-select: none; */
+}
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+}
+.controlBox {
+  width: 320px;
+  height: 500px;
+  position: relative;
+  box-shadow: 5px 0px 5px rgba(0,0,0,0.6);
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+  z-index: 9999;
+  transition: 1s;
+}
+
+.openClose {
+  right: 7px;
+  top: 44%;
+  font-size: 28px;
+  position: absolute;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.fullGroup {
+  display: block;
+}
+
+@media screen and (min-width: 400px) {
+  .controlBox {
+    width: 320px;
+    height: 428px;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .controlBox {
+    width: 320px;
+    height: 510px;
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .controlBox {
+    width: 320px;
+    height: 500px;
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .controlBox {
+    width: 320px;
+    height: 600px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .controlBox {
+    width: 360px;
+    height: 700px;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .controlBox {
+    width: 360px;
+    height: 800px;
+    margin-top: 90px;
+  }
+}
+
+
+.inputGroup {
+  width: 87%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.controlHeader {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.controlHeader b {
+  font-size: 18px;
+}
+
+.objRotation {
+  left: 0px;
+  padding-top: 15px;
+  
+}
+.objRotation p{
+position: absolute;
+top: -2px;
+font-size: 12px;
+z-index: 3;
+}
+
+.objGradient {
+  left: 0px;
+  padding-top: 15px;
+  margin-left: 24px;
+}
+
+.objGradient p{
+  position: absolute;
+  top: -2px;
+  font-size: 12px;
+  z-index: 3;
+  }
+
+  .objShadowed {
+    left: 0px;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  
+  .objShadowed p{
+    position: absolute;
+    top: -2px;
+    font-size: 12px;
+    z-index: 3;
+    }
+
+
+  .myTooltip {
+    left: 500px;
+    top: 500px;
+    width: 170px;
+    height: 90px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 3px 0 3px;
+  }
+
+  .coordinateDot {
+    bottom: 0px;
+    right: 0px;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+  }
+
+  .myTooltip span {
+    margin-left: 10px;
+    top: 7px;
+    font-size: 12px;
+    position: relative;
+  }
+
+  .DebugLog {
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 7px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+  }
+
+  .DebugLog h1, h2, h3, h4 {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .DebugLog p {
+    margin-top: 5px;
+  }
+  .Destination {
+    bottom: 0;
+    right: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(0, 170, 100, 1);
+    box-shadow: 0 0 10px rgba(0, 230, 170, 1);
+  }
