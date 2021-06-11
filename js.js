@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     function Main() {
         $('body').on('contextmenu', function (e) {
-            return false;
+            //return false;
         })
     }
 
@@ -154,6 +154,7 @@ $(document).ready(function () {
         $('.DebugLog').append(`<p id="OP6"></p>`);
         $('.DebugLog').append(`<p id="OP5"></p>`);
         $('.DebugLog').append(`<p id="OP7"></p>`);
+        $('.DebugLog').append(`<p id="OP8"></p>`);
 
         setInterval(function () {
             $('#OP1').html(`<b>BODY B-COLOR:</b> RGB(${par1}, ${par2}, ${par3})`);
@@ -164,6 +165,9 @@ $(document).ready(function () {
             $('#OP7').html(`<b>INCREEMENT:</b> </br> X:${incX} </br> Y:${incY}`);
             $('#OP4').on('click', function () { generateNewCoordinates(); });
             $('#OP5').html(`<b>NODES APPEND:</b> ${i}`);
+            $('#OP8').html(`<b>VIEW CODES?</b> ON ${i}`);
+            
+            
         })
 
     }
