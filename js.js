@@ -165,7 +165,7 @@ $(document).ready(function () {
             $('#OP7').html(`<b>INCREEMENT:</b> </br> X:${incX} </br> Y:${incY}`);
             $('#OP4').on('click', function () { generateNewCoordinates(); });
             $('#OP5').html(`<b>NODES APPEND:</b> ${i}`);
-            $('#OP8').html(`<b>VIEW CODES?</b> ON ${i}`);
+            $('#OP8').html(`<b>VIEW CODES?</b> ON`);
             
             
         })
